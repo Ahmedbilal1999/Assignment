@@ -95,9 +95,9 @@ header button {
 .bgchange {
     background: #d72626f4;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    background: -webkit-linear-gradient(to right, #d72626f4, #d72626f4);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #26a0da, #314755);
+    background: linear-gradient(to right, #d72626f4, #d72626f4);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: azure;
 }
@@ -105,9 +105,9 @@ header button {
 .buttonsuccess {
     background: #d72626f4;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    background: -webkit-linear-gradient(to right, #0fac0f, #bce8e5);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #26D0CE, #1A2980);
+    background: linear-gradient(to right, #266c32, #9ad9f1);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
 }
@@ -115,8 +115,8 @@ header button {
 .buttonred {
     background: #d72626f4;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EA384D, #D31027);
+    background: -webkit-linear-gradient(to right, #c0737c, #D31027);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EA384D, #D31027);
+    background: linear-gradient(to right, #d4606e, #D31027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
