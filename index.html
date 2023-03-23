@@ -54,29 +54,29 @@
                             <h3 class=" border border-3 p-3 border-primary rounded" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">Sorting</h3>
                             <div id="sort_by">
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="sort_radio" type="radio" v-on:click="changeCriteria('lesson') " checked>
+                                    <input name="sort_radio" type="checkbox" v-on:click="changeCriteria('lesson') " checked>
                                     <label for="sort_radio">Subject</label>
                                 </div>
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="sort_radio" type="radio" v-on:click="changeCriteria('location')">
+                                    <input name="sort_radio" type="checkbox" v-on:click="changeCriteria('location')">
                                     <label for="sort_radio">Location</label>
                                 </div>
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="sort_radio" type="radio" v-on:click="changeCriteria('price')">
+                                    <input name="sort_radio" type="checkbox" v-on:click="changeCriteria('price')">
                                     <label for="sort_radio">Price</label>
                                 </div>
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="sort_radio" type="radio" v-on:click="changeCriteria('availability')">
+                                    <input name="sort_radio" type="checkbox" v-on:click="changeCriteria('availability')">
                                     <label for="sort_radio">Availability</label>
                                 </div>
                             </div>
                             <div id="order_by">
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="order_radio" type="radio" v-on:click="changeOrder('ascending')">
+                                    <input name="order_radio" type="checkbox" v-on:click="changeOrder('ascending')">
                                     <label for="order_radio">Ascending</label>
                                 </div>
                                 <div class="radio_container border border-2 p-3 border-primary rounded">
-                                    <input name="order_radio" v-on:click="changeOrder('descending')" type="radio">
+                                    <input name="order_radio" v-on:click="changeOrder('descending')" type="checkbox">
                                     <label for="order_radio">Descending</label>
                                 </div>
                             </div>
@@ -98,8 +98,8 @@
                                     <div class="card-body bg-Light">
                                         <div class="info_container">
                                             <p class="card-text">Subject: {{subject.lesson}}</p>
-                                            <p class="card-text">Location: Dubai,{{subject.location}}</p>
-                                            <p class="card-text">Price: AED {{subject.price}}</p>
+                                            <p class="card-text">Location: {{subject.location}}</p>
+                                            <p class="card-text">Price: {{subject.price}} AED</p>
                                             <p class="card-text">Spaces: {{subject.spaces}}</p>
                                         </div>
                                         <button class="btn btn-success w-50  buttonsuccess" v-if="subject.spaces > 0" v-on:click="addToCart(subject)">Add To Cart</button>
@@ -184,66 +184,80 @@
 
             subjects: [{
 
-                lesson: "English Language",
-                location: 'Burj Khalifa',
-                price: "500",
-                spaces: 6,
-                image: "img/englishlanguage.jpg"
-            }, {
-                lesson: "Swimming",
-                location: 'Burj Al Arab',
-                price: "3000",
+                lesson: "Art and Drawing",
+                location: 'UAE public school',
+                price: "99",
                 spaces: 9,
-                image: "img/swimming.jpg"
+                image: "images/art.jpg"
             }, {
-                lesson: "Sports activity",
-                location: 'Global Village',
-                price: "4000",
+                lesson: "Science Experiments",
+                location: 'UAE public school',
+                price: "110",
+                spaces: 15,
+                image: "images/scienceExperiments.jpg"
+            }, {
+                lesson: "Fitness and Sportsmanship",
+                location: 'GEMS world academy Dubai',
+                price: "345",
+                spaces: 15,
+                image: "images/sports.jpg"
+            }, {
+                lesson: "Photography",
+                location: 'Repton School Dubai',
+                price: "75",
                 spaces: 8,
-                image: "img/sportactivity.png"
+                image: "images/photography.jpg"
             }, {
-                lesson: "Ice skating",
-                location: 'Dubai Mall',
-                price: "1500",
-                spaces: 0,
-                image: "img/icekating.png"
-            }, {
-                lesson: "Futsal",
-                location: 'Ski Dubai',
-                price: "2000",
-                spaces: 19,
-                image: "img/futsall.jpg"
-            }, {
-                lesson: "Arabic",
-                location: 'Dubai Garden',
-                price: "3000",
-                spaces: 6,
-                image: "img/arabic.jpeg"
-            }, {
-                lesson: "Indoor Games",
-                location: 'Down Town',
-                price: "1000",
-                spaces: 3,
-                image: "img/indoorgames.jpg"
-            }, {
-                lesson: "Outdoor Games",
-                location: 'Desert Safari',
-                price: "800",
-                spaces: 14,
-                image: "img/ouutdoorgames.png"
-            }, {
-                lesson: "Movies",
-                location: 'Dubai Mall',
-                price: "500",
+                lesson: "Music theory and composition",
+                location: 'Kings School Dubai',
+                price: "120",
                 spaces: 1,
-                image: "img/movies.jpg"
+                image: "images/music.jpg"
+            }, {
+                lesson: "Mathematics Puzzles and Games",
+                location: 'Nord Anglia Intl School Dubai',
+                price: "145",
+                spaces: 7,
+                image: "images/mathPuzzle.jpg"
+            }, {
+                lesson: "History of Ancient Civilization",
+                location: 'Gems Wellington International School',
+                price: "100",
+                spaces: 0,
+                image: "images/historyAncient.jpg"
+            }, {
+                lesson: "Geography and World cultures",
+                location: 'British School',
+                price: "80",
+                spaces: 17,
+                image: "images/geography.png"
+            }, {
+                lesson: "Learn French",
+                location: 'Jumeirah Language School',
+                price: "150",
+                spaces: 13,
+                image: "images/french.jpg"
+
+            },{
+                lesson: "Public Speaking and Debate",
+                location: 'Kings School',
+                price: "45",
+                spaces: 10,
+                image: "images/debate.png"
 
             }, {
-                lesson: "Practice a Skill",
-                location: 'Home town',
-                price: "200",
-                spaces: 0,
-                image: "img/practiceskils.png"
+                lesson: "Coding and Programming",
+                location: 'JESS primary School',
+                price: "250",
+                spaces: 10,
+                image: "images/coding.jpg"
+
+            },{
+                lesson: "Environmental Science",
+                location: 'Repton School Dubai',
+                price: "70",
+                spaces: 20,
+                image: "images/environmentalScience.jpg"
 
             }, ],
             subject: this.subject,

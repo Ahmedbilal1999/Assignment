@@ -15,7 +15,7 @@
 } */
 
 .width {
-    width: 100%;
+    width: 90%;
 }
 
 .height {
@@ -32,7 +32,7 @@ header {
     padding: 0.5rem;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 1px 6px 6px #21214230;
+    box-shadow: 1px 6px 6px #e92b2bd2;
 }
 
 header button {
@@ -93,7 +93,7 @@ header button {
 }
 
 .bgchange {
-    background: #314755;
+    background: #d72626f4;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #26a0da, #314755);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -103,7 +103,7 @@ header button {
 }
 
 .buttonsuccess {
-    background: #1A2980;
+    background: #d72626f4;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -113,7 +113,7 @@ header button {
 }
 
 .buttonred {
-    background: #D31027;
+    background: #d72626f4;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EA384D, #D31027);
     /* Chrome 10-25, Safari 5.1-6 */
