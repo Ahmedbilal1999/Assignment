@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="subject.js"></script>
@@ -14,7 +15,7 @@
 
 <body>
     <div id="app">
-=
+
         <div class="container-fluid bgchange">
             <div class="row">
                 <div class="col-10">
@@ -96,8 +97,8 @@
                                             <p class="card-text">Price: {{subject.price}} AED</p>
                                             <p class="card-text">Seats Available: {{subject.spaces}}</p>
                                         </div>
-                                        <button class="btn btn-success w-50  buttonsuccess" v-if="subject.spaces > 0" v-on:click="addToCart(subject)">Add To Cart</button>
-                                        <button class="btn btn-danger w-50 buttonred" v-else disabled>Add To Cart</button>
+                                        <button class="btn btn-success w-50  buttonsuccess" v-if="subject.spaces > 0" v-on:click="addToCart(subject)"><i class="fa fa-cart-plus"></i> Add To Cart</button>
+                                        <button class="btn btn-danger w-50 buttonred" v-else disabled> Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
